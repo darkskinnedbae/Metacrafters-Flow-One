@@ -1,0 +1,23 @@
+pub contract Shop {
+    
+ pub struct provisions {
+    pub var name: String
+    pub var number: Int
+
+      init (_name: String, _number: Int) {
+      self.name = _name
+      self.number = _number
+    }
+   }
+
+   pub let theitems: {String: provisions}
+
+   pub fun addmyitems(name: String, number: Int){
+    let item = provisions(_name: name, _number: number)
+    self.theitems[name] = item
+    }
+
+    init() {
+    self.theitems = {}
+    }
+}  
