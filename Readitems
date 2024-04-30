@@ -1,0 +1,5 @@
+import Shop from 0x05
+
+pub fun main(): {String: Shop.provisions} {
+  return Shop.theitems
+}
