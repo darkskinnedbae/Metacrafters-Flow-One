@@ -1,0 +1,9 @@
+import Shop from 0x05
+
+transaction(name: String, number: Int) {
+    prepare(signer: AuthAccount) {}
+
+    execute{
+    Shop.addmyitems(name: name, number: number)
+    }
+}
